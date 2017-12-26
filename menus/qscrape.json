@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle qscrape",
+        "command": "qscrape:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "qscrape",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "qscrape:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
