@@ -1,5 +1,5 @@
 {
-  "atom-workspace": {
-    "ctrl-alt-o": "qscrape:toggle"
+  "atom-text-editor.vim-mode-plus:not(.insert-mode)": {
+    ", r u": "qscrape:toggle"
   }
 }
