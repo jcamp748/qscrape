@@ -3,8 +3,7 @@
   "main": "./lib/qscrape",
   "version": "0.0.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "qscrape:toggle"
   },
@@ -14,5 +13,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "jquery": "^3.2.1"
   }
 }

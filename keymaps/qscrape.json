@@ -1,6 +1,6 @@
 {
-  "atom-text-editor.vim-mode-plus:not(.insert-mode)": {
-    ", r u": "qscrape:toggle",
-    ", r r": "qscrape:runRubyScript"
+  "atom-text-editor": {
+    "alt-q": "qscrape:toggle",
+    "alt-r": "qscrape:runRubyScript"
   }
 }

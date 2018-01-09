@@ -1,5 +1,6 @@
 require "selenium-webdriver"
 require 'json'
+require 'ruby-cheerio'
 
 ID_TESTRESULT = 'qunit-testresult'
 
@@ -11,22 +12,13 @@ def qscrape
   ::Selenium::WebDriver::Wait.new(timeout: 4).until do
     completed?
   end
-  jquery = '$("ol#qunit-tests li.fail li.fail tr.test-source pre")'
-  errors = $driver.execute_script("return #{jquery}");
-  regex = /localhost:8000/
-  errors.each do |error, index|
-    puts dir.chomp << error.text.lines.first.split(regex).last.chop.chop
-  end
 
-  jquery = '$("li.fail tbody")'
-  data_objects = $driver.execute_script("return #{jquery}");
-  #file = File.open("debug.info", "w");
-  metronome_data = Hash.new
-  data_objects.each_with_index do |data, index|
-    #file.puts data.text
-    metronome_data[index] = data.text
+  jquery = '$("div#qunit").html();'
+  html = $driver.execute_script("return #{jquery}")
+  cheerio = RubyCheerio.new(html);
+  cheerio.find('li.fail tbody').each do |test|
+    puts test.html
   end
-  #return JSON.pretty_generate(metronome_data)
 
 end
 

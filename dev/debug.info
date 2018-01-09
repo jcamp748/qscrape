@@ -1,0 +1,84 @@
+Expected: 
+{
+  "count": "3",
+  "section": "outro",
+  "tempo": "150",
+  "timesig": "4/4"
+}
+Result: 
+{
+  "count": "1",
+  "section": "intro",
+  "tempo": "100",
+  "timesig": "4/4"
+}
+Diff: 
+{
+  "count": "31",
+  "section": "ouintro",
+  "tempo": "1500",
+  "timesig": "4/4"
+}
+Source: 
+    at Object.<anonymous> (http://localhost:8000/test/loop.js:65:12)
+    at runTest (http://localhost:8000/js/lib/qunit.js:1471:30)
+    at Test.run (http://localhost:8000/js/lib/qunit.js:1457:6)
+    at http://localhost:8000/js/lib/qunit.js:1663:12
+    at Object.advance (http://localhost:8000/js/lib/qunit.js:1116:26)
+    at begin (http://localhost:8000/js/lib/qunit.js:2928:20)
+Expected: 
+{
+  "count": "3",
+  "section": "outro",
+  "tempo": "150",
+  "timesig": "4/4"
+}
+Result: 
+{
+  "count": "1",
+  "section": "intro",
+  "tempo": "100",
+  "timesig": "4/4"
+}
+Diff: 
+{
+  "count": "31",
+  "section": "ouintro",
+  "tempo": "1500",
+  "timesig": "4/4"
+}
+Source: 
+    at Object.<anonymous> (http://localhost:8000/test/loop.js:69:12)
+    at runTest (http://localhost:8000/js/lib/qunit.js:1471:30)
+    at Test.run (http://localhost:8000/js/lib/qunit.js:1457:6)
+    at http://localhost:8000/js/lib/qunit.js:1663:12
+    at Object.advance (http://localhost:8000/js/lib/qunit.js:1116:26)
+    at begin (http://localhost:8000/js/lib/qunit.js:2928:20)
+Expected: 
+{
+  "count": "1",
+  "section": "intro",
+  "tempo": "100",
+  "timesig": "4/4"
+}
+Result: 
+{
+  "count": "3",
+  "section": "outro",
+  "tempo": "150",
+  "timesig": "4/4"
+}
+Diff: 
+{
+  "count": "13",
+  "section": "inoutro",
+  "tempo": "1050",
+  "timesig": "4/4"
+}
+Source: 
+    at Object.<anonymous> (http://localhost:8000/test/loop.js:81:12)
+    at runTest (http://localhost:8000/js/lib/qunit.js:1471:30)
+    at Test.run (http://localhost:8000/js/lib/qunit.js:1457:6)
+    at http://localhost:8000/js/lib/qunit.js:1663:12
+    at Object.advance (http://localhost:8000/js/lib/qunit.js:1116:26)
+    at begin (http://localhost:8000/js/lib/qunit.js:2928:20)
