@@ -3,6 +3,34 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@fontSize: 150%;
 
 .qscrape {
+  // allow for scrolling
+  overflow: auto;
+
+  // make global font bigger
+  font-size: @fontSize;
+
+  pre {
+    // make <pre> the same size as global font
+    font-size: 100%;
+  }
+  del {
+    // diff red color
+    background-color: #b30000;
+  }
+  ins {
+    // diff green color
+    background-color: #1e7b1e;
+  }
+
+  tbody {
+    margin: 100px;
+    box-shadow: inset 1px 0px 20px 0px black;
+  }
+
+  th {
+    text-align: center;
+  }
 }
