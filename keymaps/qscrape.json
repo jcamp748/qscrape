@@ -2,5 +2,9 @@
   "atom-text-editor": {
     "alt-q": "qscrape:toggle",
     "alt-r": "qscrape:runRubyScript"
+  },
+  "atom-text-editor.vim-mode-plus.normal-mode": {
+    ", r r": "qscrape:toggle",
+    ", r u": "qscrape:runRubyScript"
   }
 }
